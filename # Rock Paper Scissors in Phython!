@@ -1,0 +1,18 @@
+# Rock Paper Scissors in Phython!
+
+Pick you weapon and play against the compurter - you'll only get a virtual sting if you lose!
+
+Prerrequisites: All you need is Python 3 to play.
+
+Clone project, navigate to the correct directory, - cd directory name - and run the game.py file in a Python Terminal window for macOS/Linux.
+
+The rules are the same as the classic game:
+1. Paper covers rock
+2. Scissors cuts paper
+3. Rock smashes Scissors
+
+Choose your weapon wisely!
+
+The computer chooses first; just follow the prompts
+
+Built with Python 3.
