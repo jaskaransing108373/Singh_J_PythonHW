@@ -1,9 +1,9 @@
 from random import randint
 
 # set up some variables for player and AI lives
-player_lives = 1
-computer_lives = 1
-total_lives = 1
+player_lives = 5
+computer_lives = 5
+total_lives = 5
 
 # choices is an array => an array is a container that can hold multiple values
 # arrays are 0-based -> first entry is 0, 2nd is 1, 3rd is 2 etc
