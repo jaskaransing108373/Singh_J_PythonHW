@@ -16,10 +16,39 @@ while gameVars.player is False:
 	print("computer chose ", gameVars.computer, "\n")
 	print("player chose ", player, "\n")
 
-	### This is where you would have to call compare
-	
-	#### end compare stuff
-	
+	if player.lower() == "quit": 
+		exit()
+	elif gameVars.computer == player:
+		print("tie! no one wins, play again")
+
+	elif player.lower() == "rock":
+		if gameVars.computer == "paper":
+			print("You lose!", gameVars.computer, "covers", player, "\n")
+			gameVars.player_lives = gameVars.player_lives - 1
+		else:
+			print("You win!", player, "smashes", gameVars.computer, "\n")
+			gameVars.computer_lives = gameVars.computer_lives - 1 
+
+	elif player.lower() == "paper":
+		if gameVars.computer == "scissors":
+			print("You lose!", gameVars.computer, "cuts", player, "\n")
+			gameVars.player_lives = gameVars.player_lives - 1
+		else:
+			print("You win!", player, "covers", gameVars.computer, "\n")
+			gameVars.computer_lives = gameVars.computer_lives - 1 
+
+	elif player.lower() == "scissors":
+		if gameVars.computer == "rock":
+			print("You lose!", gameVars.computer, "smashes", player, "\n")
+			gameVars.player_lives = gameVars.player_lives - 1
+		else:
+			print("You win!", player, "cuts", gameVars.computer, "\n")
+			gameVars.computer_lives = gameVars.computer_lives - 1
+
+	else:
+		print("That's not a valid choice, try again")
+
+
 	# handle all lives lost for player or AI
 	if gameVars.player_lives is 0:
 		winlose.winorlose("lost")
