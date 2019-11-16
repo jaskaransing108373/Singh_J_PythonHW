@@ -9,28 +9,28 @@ def comparechoices():
 	elif gameVars.computer == player:
 		print("tie! no one wins, play again")
 
-	elif player == "rock":
-		if gameVars.computer == "paper":
-			print("You lose!", gameVars.computer, "covers", player, "\n")
+	elif player == "hot water":
+		if gameVars.computer == "fire":
+			print("You lose!", gameVars.computer, "extinguishes", player, "\n")
 			gameVars.player_lives = gameVars.player_lives - 1
 		else:
-			print("You win!", player, "smashes", gameVars.computer, "\n")
+			print("You win!", player, "colds", gameVars.computer, "\n")
 			gameVars.computer_lives = gameVars.computer_lives - 1
 
-	elif player == "paper":
-		if gameVars.computer == "scissors":
-			print("You lose!", gameVars.computer, "cuts", player, "\n")
+	elif player == "fire":
+		if gameVars.computer == "ice":
+			print("You lose!", gameVars.computer, "melts", player, "\n")
 			gameVars.player_lives = gameVars.player_lives - 1
 		else:
-			print("You win!", player, "covers", computer, "\n")
+			print("You win!", player, "extinguishes", computer, "\n")
 			gameVars.computer_lives = gameVars.computer_lives - 1
 
-	elif player == "scissors":
-		if computer == "rock":
-			print("You lose!", computer, "smashes", player, "\n")
+	elif player == "ice":
+		if computer == "hot water":
+			print("You lose!", computer, "colds", player, "\n")
 			gameVars.player_lives = gameVars.player_lives - 1
 		else:
-			print("You win!", player, "cuts", computer, "\n")
+			print("You win!", player, "melts", computer, "\n")
 			gameVars.computer_lives = gameVars.computer_lives - 1
 
 	else:

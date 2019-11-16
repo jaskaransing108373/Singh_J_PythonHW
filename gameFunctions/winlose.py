@@ -18,7 +18,6 @@ def winorlose(status):
 
 	elif (choice is "Y") or (choice is "y"):
 		# reset the game so that we can start all over again
-		# this will break, currently - we will fix this next class
 		gameVars.player_lives = 1
 		gameVars.computer_lives = 1
 		gameVars.total_lives = 1

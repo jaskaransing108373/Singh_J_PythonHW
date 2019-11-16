@@ -7,7 +7,7 @@ total_lives = 5
 
 # choices is an array => an array is a container that can hold multiple values
 # arrays are 0-based -> first entry is 0, 2nd is 1, 3rd is 2 etc
-choices = ["rock", "paper", "scissors"]
+choices = ["hot water", "ice", "fire"]
 
 # set the computer variable to one of these choices (0, 1 or 2)
 computer = choices[randint(0, 2)]

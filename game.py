@@ -10,7 +10,7 @@ while gameVars.player is False:
 	print("Choose your weapon!\n")
 	print("**********************************")
 
-	player = input("choose rock, paper or scissors: ")
+	player = input("choose hot water, ice or fire: ")
 	player = player.lower()
 
 	print("computer chose ", gameVars.computer, "\n")
@@ -21,28 +21,28 @@ while gameVars.player is False:
 	elif gameVars.computer == player:
 		print("tie! no one wins, play again")
 
-	elif player.lower() == "rock":
-		if gameVars.computer == "paper":
-			print("You lose!", gameVars.computer, "covers", player, "\n")
+	elif player.lower() == "hot water":
+		if gameVars.computer == "fire":
+			print("You lose!", gameVars.computer, "extinguishes", player, "\n")
 			gameVars.player_lives = gameVars.player_lives - 1
 		else:
-			print("You win!", player, "smashes", gameVars.computer, "\n")
+			print("You win!", player, "colds", gameVars.computer, "\n")
 			gameVars.computer_lives = gameVars.computer_lives - 1 
 
-	elif player.lower() == "paper":
-		if gameVars.computer == "scissors":
-			print("You lose!", gameVars.computer, "cuts", player, "\n")
+	elif player.lower() == "fire":
+		if gameVars.computer == "ice":
+			print("You lose!", gameVars.computer, "melts", player, "\n")
 			gameVars.player_lives = gameVars.player_lives - 1
 		else:
-			print("You win!", player, "covers", gameVars.computer, "\n")
+			print("You win!", player, "extinguishes", gameVars.computer, "\n")
 			gameVars.computer_lives = gameVars.computer_lives - 1 
 
-	elif player.lower() == "scissors":
-		if gameVars.computer == "rock":
-			print("You lose!", gameVars.computer, "smashes", player, "\n")
+	elif player.lower() == "ice":
+		if gameVars.computer == "hot water":
+			print("You lose!", gameVars.computer, "colds", player, "\n")
 			gameVars.player_lives = gameVars.player_lives - 1
 		else:
-			print("You win!", player, "cuts", gameVars.computer, "\n")
+			print("You win!", player, "melts", gameVars.computer, "\n")
 			gameVars.computer_lives = gameVars.computer_lives - 1
 
 	else:
